@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="cloud.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js CDN -->
+</head>
+<body>
+  <div class="container">
+    <h1>🌦️ Weather Forecast</h1>
+    <div class="input-box">
+      <input type="text" id="CityInput" placeholder="Enter city name">
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+
+    <div class="columns">
+      <!-- Left Column: City Weather -->
+      <div class="column" id="weatherResult">
+        <!-- Weather info will appear here -->
+      </div>
+
+      <!-- Center Column: Map -->
+      <div class="column" id="map">
+        <!-- Map will appear here -->
+      </div>
+
+      <!-- Right Column: Chart -->
+      <div class="column">
+        <canvas id="tempChart" width="300" height="200"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="cloud.js"></script>
+</body>
+</html>
