@@ -2,7 +2,7 @@ let tempChart;
 
 function getWeather() {
   const city = document.getElementById("CityInput").value;
-  const apiKey = "5244221738776a843d404f8c9e6b51c2"; // Replace with your actual OpenWeatherMap API key
+  const apiKey = "YOUR API KEY "; // Replace with your actual OpenWeatherMap API key
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -67,4 +67,5 @@ function getWeather() {
       document.getElementById("weatherResult").innerHTML = `<p style="color:red;">${error.message}</p>`;
       document.getElementById("map").innerHTML = "";
     });
+
 }
